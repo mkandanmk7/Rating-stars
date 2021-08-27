@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  background: linear-gradient(to right, rgb(250, 252, 247), rgb(122, 117, 117));
+  height: 100vh;
+  justify-content: center;
+}
+.container {
+  background: #fac;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 10px;
+}
+.star-container {
+  direction: rtl;
+  letter-spacing: 7px;
+  padding: 30px 20px;
+}
+button {
+  color: #fff;
+  margin: 6px;
+  border: none;
+  font-size: 2rem;
+  background: transparent;
+  transition: 0.2s;
+}
+#rating {
+  color: rgb(27, 25, 25);
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+.container button:hover {
+  color: rgb(64, 230, 31);
+  cursor: pointer;
+  filter: drop-shadow(2px 5px 10px);
+}
+.star1:hover ~ .star {
+  color: rgb(255, 238, 0);
+}
+.star2:hover ~ .star {
+  color: rgb(255, 238, 0);
+}
+.star3:hover ~ .star {
+  color: rgb(255, 238, 0);
+}
+
+.star4:hover ~ .star {
+  color: rgb(255, 238, 0);
+}
+.star5:hover ~ .star {
+  color: rgb(255, 238, 0);
+}
+.hovered {
+  color: rgb(255, 238, 0);
+}
+.hovered ~ .star {
+  color: rgb(255, 238, 0);
+}
